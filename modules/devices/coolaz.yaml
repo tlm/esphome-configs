@@ -1,0 +1,24 @@
+packages:
+  common: !include ../common-esp32-idf.yaml
+
+external_components:
+  - source: github://geoffdavis/esphome-mitsubishiheatpump
+
+status_led:
+  pin: GPIO14
+
+light:
+  - platform: binary
+    name: Binary Light
+    output: bin_led
+
+output:
+  - platform: gpio
+    pin: GPIO32
+    id: bin_led
+
+climate:
+  - platform: mitsubishi_heatpump
+    name: ${friendly_name}
+    hardware_uart: UART2
+    update_interval: 500ms

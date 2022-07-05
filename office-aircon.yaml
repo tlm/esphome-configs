@@ -1,0 +1,7 @@
+---
+substitutions:
+  name: office-aircon
+  friendly_name: Office Air Conditioner
+
+packages:
+  common: !include modules/devices/coolaz.yaml

@@ -1,0 +1,7 @@
+---
+substitutions:
+  name: bedroom-aircon
+  friendly_name: Bedroom Air Conditioner
+
+packages:
+  common: !include modules/devices/coolaz.yaml

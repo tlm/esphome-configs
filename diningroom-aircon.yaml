@@ -1,0 +1,7 @@
+---
+substitutions:
+  name: diningroom-aircon
+  friendly_name: Dining Room Air Conditioner
+
+packages:
+  common: !include modules/devices/coolaz.yaml

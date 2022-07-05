@@ -1,0 +1,7 @@
+---
+substitutions:
+  name: loungeroom-aircon
+  friendly_name: Lounge Room Air Conditioner
+
+packages:
+  common: !include modules/devices/coolaz.yaml
